@@ -1,0 +1,297 @@
+
+/* reset básico, essa parte evita que aconteça possíveis bugs*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* container para centralizar conteúdo*/
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    background-color: #456fa3;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+
+}
+
+header nav ul li a:hover{
+    color: #000000;
+}
+
+/* seções*/
+.content-section{
+    padding: 40px 0;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.content-section p {/*objetivos Ods 16*/
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.img-objetivo{
+    display: block;
+    margin: 0 auto;
+}
+
+.content-section ul{/*metas ods 19*/
+    list-style: disc;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.content-section ul li{
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding:  20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+    width: 100%;
+    }
+ }
+ .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+header {
+    background: #294352;
+    color: #fff;
+    padding: 1rem 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 1.5rem;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*parte do carrossel*/
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #223752 , #5080bb ) ;
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+   
+}
+
+.navegation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.barra:hover {
+    background-color: #fff ;
+}
+
+input{
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ ,s1{
+    margin-left: -80%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#objetivo{
+    padding: 20px;
+    position: relative;
+}
+
+.content{
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.video{
+    text-align: center;
+}
+
+/*essa é a parte dos cards*/
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5080bb;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+ /*tentativa de deixa-los na horizontal*/
+
