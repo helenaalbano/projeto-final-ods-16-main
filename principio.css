@@ -96,12 +96,17 @@ footer{
     color: white;
     padding:  20px 0;
     text-align: center;
+    
 }
 
 footer p {
     font-size: 1em;
 }
 
+footer a{
+    text-decoration: none;
+    color: #5080bb;
+}
 
 @media screen and (max-width: 800px) {
     .left, .main, .right {
@@ -293,5 +298,10 @@ h1{
     margin-top: 16px;
     color: #fff;
 }
- /*tentativa de deixa-los na horizontal*/
+/*botão da sessão da agenda 2030*/
 
+.botaoagenda{
+    text-align: center;
+    margin-top: 50vh;
+
+}
