@@ -56,3 +56,6 @@ button:hover{
     animation-iteration-count: infinite;
     animation-duration: alternate;
 }
+button a{
+    text-decoration: none;
+}
