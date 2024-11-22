@@ -13,6 +13,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    
+
 }
 
 /* container para centralizar conteúdo*/
@@ -21,6 +23,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
+
 }
 
 header {
@@ -59,18 +63,23 @@ header nav ul li a:hover {
 
 /* seções*/
 .content-section {
-    padding: 40px 0;
+    padding: 4% 0;
     background-color: #ffffff;
-    margin: 20px 0;
+    margin: 2% 0;/*espaço emtre as section*/
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(72deg, #385d72, #4c7ab3);
-    width: 1300px;
+    width: 95%;
     height: auto;
-    margin-left: 30px;
+    align-items: center;
 
 }
-
+section{
+    position: relative;
+    padding: 3%;
+    padding-left: 3%;
+    left: 3%;
+}
 .content-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -86,7 +95,7 @@ header nav ul li a:hover {
 .content-section p {
     /*objetivos Ods 16*/
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20epx;
     color: #f0f0f0;
 }
 
@@ -389,3 +398,4 @@ button {
     text-align: center;
    }
 
+   
